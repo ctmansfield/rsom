@@ -1,0 +1,5 @@
+SYNTHETIC TEST RESULT, NOT AN EXECUTION RECORD.
+Example only: 3 synthetic checks passed, 0 synthetic checks failed.
+These numbers do not report any execution of the notification connector.
+No live service, Apple push service, server deployment, or phone was exercised.
+A matching file digest verifies only these bytes; it does not make this claim true.

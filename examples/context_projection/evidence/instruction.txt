@@ -1,0 +1,9 @@
+SYNTHETIC FIXTURE. This is not an actual COORD001 instruction or authorization.
+Illustrative instruction ID: COORD001-SYNTHETIC; revision: demo-r1.
+Goal: prepare a local route from a command on an LLM server to a phone notification.
+The paid-account APNs route is deferred. A local route is selected, but its transport
+and actual deployment details are unspecified. Phone runtime remains unverified.
+This fixture permits only an offline projection demonstration. It authorizes no
+network calls, credential changes, deployment, ACK creation, or adoption of policy.
+Source locator https://example.invalid/coord001-demo#instruction-1 is illustrative
+untrusted data, not a URL to fetch or an instruction to execute.

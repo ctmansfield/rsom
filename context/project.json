@@ -1,0 +1,12 @@
+{
+  "control_url": "https://github.com/ctmansfield/rsom/issues",
+  "policy": {
+    "freshness": "unverified",
+    "url": "https://github.com/ctmansfield/rsom/blob/main/.codex/WORKFLOW.md",
+    "version": "context-v1"
+  },
+  "project": "rsom",
+  "repository": "ctmansfield/rsom",
+  "schema": "context-project",
+  "version": 1
+}

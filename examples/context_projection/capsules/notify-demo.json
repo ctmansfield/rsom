@@ -1,0 +1,166 @@
+{
+  "schema": "context-projection-task",
+  "version": 1,
+  "record_kind": "synthetic_fixture",
+  "task_id": "notify-demo",
+  "task_revision": "demo-task-r1",
+  "observed_at": "2026-01-01T00:00:00Z",
+  "source_freshness": {
+    "state": "unverified",
+    "sync_state": "NOT_CHECKED",
+    "detail": "No upstream source or live target checked."
+  },
+  "goal": "Prepare a local LLM-server-to-phone notification route.",
+  "scope": [
+    "Synthetic fixture only; offline coordination projection."
+  ],
+  "acceptance": [
+    "Choose the local transport using actual deployment details.",
+    "Observe a command-triggered phone notification before marking runtime verified."
+  ],
+  "authorization": {
+    "state": "synthetic_example_only",
+    "allowed": [
+      "Read this task and explicitly indexed local references."
+    ],
+    "not_authorized": [
+      "No network, credentials, deployment, COORD001 mutations, ACK creation, or policy adoption."
+    ],
+    "source": "instruction"
+  },
+  "constraints": [
+    "Paid-account APNs is deferred.",
+    "Local route is selected; transport and deployment details are unspecified.",
+    "Phone runtime remains unverified.",
+    "Existing COORD001 IDs, revisions and ACK bindings remain authoritative; this is not a ledger."
+  ],
+  "instruction_binding": {
+    "id": "COORD001-SYNTHETIC",
+    "revision": "demo-r1",
+    "source": "https://example.invalid/coord001-demo#instruction-1",
+    "ref": "instruction",
+    "sha256": "2532dd3e43a985ec402186eb123c4ac4559de47c790930d696ad02c48382613d"
+  },
+  "report": {
+    "report_id": "REPORT-SYNTHETIC-1",
+    "status": "IN_PROGRESS",
+    "instruction_ref": {
+      "id": "COORD001-SYNTHETIC",
+      "revision": "demo-r1",
+      "source": "https://example.invalid/coord001-demo#instruction-1",
+      "sha256": "2532dd3e43a985ec402186eb123c4ac4559de47c790930d696ad02c48382613d"
+    },
+    "tests_performed": [
+      "None; test figures are synthetic examples."
+    ],
+    "limitations": [
+      "Transport and deployment details unknown; no phone observation."
+    ],
+    "requested_decision": "Provide local deployment details.",
+    "next_action": "#next_action",
+    "source": "report"
+  },
+  "receipt": {
+    "state": "VISIBLE",
+    "instruction_binding": {
+      "id": "COORD001-SYNTHETIC",
+      "revision": "demo-r1",
+      "source": "https://example.invalid/coord001-demo#instruction-1",
+      "sha256": "2532dd3e43a985ec402186eb123c4ac4559de47c790930d696ad02c48382613d"
+    },
+    "source": "report"
+  },
+  "decisions": [
+    {
+      "id": "route",
+      "value": "local selected; transport unspecified",
+      "source": "instruction"
+    },
+    {
+      "id": "native-apns",
+      "value": "deferred because a paid account is required",
+      "source": "instruction"
+    }
+  ],
+  "state": {
+    "code": {
+      "status": "prototype_only",
+      "detail": "Prototype only; installed code unknown.",
+      "source": "report"
+    },
+    "test": {
+      "status": "synthetic_example",
+      "detail": "3 synthetic checks passed; 0 failed. No execution represented.",
+      "source": "synthetic-tests"
+    },
+    "deploy": {
+      "status": "not_deployed",
+      "detail": "No deployment established.",
+      "source": "report"
+    },
+    "runtime": {
+      "status": "unverified",
+      "detail": "No phone notification observed.",
+      "source": "report"
+    }
+  },
+  "unknowns": [
+    "Local transport.",
+    "Actual server, deployment location and phone receiver."
+  ],
+  "conflicts": [],
+  "blockers": [
+    "Need local deployment details."
+  ],
+  "dependencies": [
+    "Existing COORD001 coordination remains authoritative."
+  ],
+  "next_action": {
+    "action": "Obtain local deployment details before selecting a transport.",
+    "role": "coordinator"
+  },
+  "refs": {
+    "instruction": {
+      "path": "evidence/instruction.txt",
+      "sha256": "2532dd3e43a985ec402186eb123c4ac4559de47c790930d696ad02c48382613d",
+      "observation": {
+        "kind": "synthetic_fixture",
+        "environment": "offline-example",
+        "method": "authored fixture",
+        "result": "not an execution record",
+        "limitations": [
+          "No live observation."
+        ],
+        "observed_at": "2026-01-01T00:00:00Z"
+      }
+    },
+    "report": {
+      "path": "evidence/report.txt",
+      "sha256": "b0e694a5338a4d5c595a2c1564390df7c8041ff85a2a9d08d7d78f4c311ca4a6",
+      "observation": {
+        "kind": "synthetic_fixture",
+        "environment": "offline-example",
+        "method": "authored fixture",
+        "result": "not an execution record",
+        "limitations": [
+          "No live observation."
+        ],
+        "observed_at": "2026-01-01T00:00:00Z"
+      }
+    },
+    "synthetic-tests": {
+      "path": "evidence/synthetic-tests.txt",
+      "sha256": "b0c3af3a723dbe2a993cd14baa5ce7390baa2d9db91b6c262d15357c029524e0",
+      "observation": {
+        "kind": "synthetic_fixture",
+        "environment": "offline-example",
+        "method": "authored fixture",
+        "result": "not an execution record",
+        "limitations": [
+          "No live observation."
+        ],
+        "observed_at": "2026-01-01T00:00:00Z"
+      }
+    }
+  }
+}

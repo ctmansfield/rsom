@@ -1,0 +1,8 @@
+SYNTHETIC FIXTURE REPORT REPORT-SYNTHETIC-1; status IN_PROGRESS.
+No COORD001 report or receipt is created by the projection command.
+Receipt state is VISIBLE for the illustrative instruction and revision; no real ACK exists.
+Code: prototype only. Test: see explicitly synthetic test evidence.
+Deployment: not deployed. Phone runtime: unverified.
+Transport, server address, deployment location, and phone receiver are unknown.
+Next action belongs to the illustrative coordinator role: obtain local deployment
+details before choosing or implementing a transport. No real owner is assigned.

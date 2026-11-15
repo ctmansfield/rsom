@@ -1,0 +1,35 @@
+name: Context reader
+
+on:
+  pull_request:
+    paths:
+      - 'AGENTS.md'
+      - 'tools/context_*.py'
+      - 'tests/test_context*.py'
+      - 'examples/context_projection/**'
+      - 'context/**'
+      - '.codex/**'
+      - '.github/workflows/context-reader.yml'
+  push:
+    paths:
+      - 'AGENTS.md'
+      - 'tools/context_*.py'
+      - 'tests/test_context*.py'
+      - 'examples/context_projection/**'
+      - 'context/**'
+      - '.codex/**'
+      - '.github/workflows/context-reader.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  context-reader:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify offline reader and hook adapter
+        run: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_context*.py'
