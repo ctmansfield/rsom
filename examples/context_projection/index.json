@@ -1,0 +1,10 @@
+{
+  "schema": "context-projection-index",
+  "version": 1,
+  "tasks": {
+    "notify-demo": {
+      "path": "capsules/notify-demo.json",
+      "sha256": "92b960733c64c1a57375ee5b7e2ae85b720ef64b2c3f792fb310b90bd51e9d68"
+    }
+  }
+}

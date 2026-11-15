@@ -1,0 +1,10 @@
+{
+  "bundle_version": "1.0.0",
+  "policy_version": "context-v1",
+  "files": {
+    "tools/context_projection.py": "ad995788ac63251b231b5f93b9f4f9f85c02b4d5c0424c5f52897f59784b12f2",
+    "tools/context_project.py": "9cd2b9b3f7c23a99295a581412ac65ea5faf80c4e94a3a031beefc623b26890c",
+    "tools/context_session_hook.py": "3fa59900208e2d9c30c0d84e934850cb1b2aad407612da810ecc71fb224711bb"
+  },
+  "verification": "Installed file hashes measured locally. Project context starts UNSEEDED; target Codex hook callbacks remain unverified."
+}
